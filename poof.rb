@@ -5,21 +5,21 @@
 class Poof < Formula
   desc "Build, deploy, and manage Solana dApps on poof.new"
   homepage "https://poof.new"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.2/poof-cli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "393a08d39b20c473d5ac4ca9677c3c32e8b9f29271f773dc49b9a433b7fa1ecf"
+      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.3/poof-cli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "5a42812789218a89f99bc8e2d267f33ae7f7e4b56021438b70708d028de46dda"
 
       define_method(:install) do
         bin.install "poof"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.2/poof-cli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "346d52d64349a19045b759605b1a76677fd6c76cde7b03445304e14b36845ec5"
+      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.3/poof-cli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "a584bb357dee67286a83d7114308295dd869a5d07c8418fc05458e466389d9cf"
 
       define_method(:install) do
         bin.install "poof"
@@ -29,15 +29,15 @@ class Poof < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.2/poof-cli_0.1.2_linux_amd64.tar.gz"
-      sha256 "cae5c5b134e4303a7dd356eb68a943762e9820ead7acecd67f740a98b61b8ccb"
+      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.3/poof-cli_0.1.3_linux_amd64.tar.gz"
+      sha256 "81c210f3d771f8ff48988282e5a2fe58bb6700ed99931695a785103ab22b5603"
       define_method(:install) do
         bin.install "poof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.2/poof-cli_0.1.2_linux_arm64.tar.gz"
-      sha256 "9645728118dba4a429f5b4c8b3de63810152978c9bfb7e0be81c6068d7fbaed5"
+      url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.3/poof-cli_0.1.3_linux_arm64.tar.gz"
+      sha256 "1956b42d4c67c7ebea233688e6b7a14d5d0c4185f0e51ee6a8d33d86ebab7c58"
       define_method(:install) do
         bin.install "poof"
       end
