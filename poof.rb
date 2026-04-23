@@ -11,7 +11,7 @@ class Poof < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.15/poof-cli_0.1.15_darwin_amd64.tar.gz"
-      sha256 "2e5e3fa0eb1141d7c271211b60194d658bb0e006f25570d80844d18961d182cc"
+      sha256 "21ce485746e7f2e10cf3bd07a1d147b21357298b14d0ab220a4f9d6d491b3f71"
 
       define_method(:install) do
         bin.install "poof"
@@ -19,7 +19,7 @@ class Poof < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.15/poof-cli_0.1.15_darwin_arm64.tar.gz"
-      sha256 "713bef723a1b5800def033e3e1a559c3c90b05875e96543171bc01ca73e501a0"
+      sha256 "9337fd319474b9ba1d8653ae9ba7b2d0878e36df6665275bf4247830b528e7c6"
 
       define_method(:install) do
         bin.install "poof"
@@ -30,14 +30,14 @@ class Poof < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.15/poof-cli_0.1.15_linux_amd64.tar.gz"
-      sha256 "81cb7972b2d82903afd090da40d0e460886bd338611357ef0b2dcbbb0ade2ba2"
+      sha256 "7bd494938ea449d0373c6c5bb5973a43caaa2e85833f24aa6cb48a359ecb25b5"
       define_method(:install) do
         bin.install "poof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/poofdotnew/poof-cli/releases/download/v0.1.15/poof-cli_0.1.15_linux_arm64.tar.gz"
-      sha256 "76fb61aaf98bf941d178f48e743c2d03bc5e97a155a3094dd4aa693e639e88bd"
+      sha256 "585dcc6244e12bb61b3b3e98053046604a8e9374410ee73314039083d7f38e57"
       define_method(:install) do
         bin.install "poof"
       end
